@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/blogging-platform/static/css/main.1b6346b7.css",
-    "main.js": "/blogging-platform/static/js/main.0233659e.js",
-    "static/js/453.e56fee0f.chunk.js": "/blogging-platform/static/js/453.e56fee0f.chunk.js",
-    "index.html": "/blogging-platform/index.html",
-    "main.1b6346b7.css.map": "/blogging-platform/static/css/main.1b6346b7.css.map",
-    "main.0233659e.js.map": "/blogging-platform/static/js/main.0233659e.js.map",
-    "453.e56fee0f.chunk.js.map": "/blogging-platform/static/js/453.e56fee0f.chunk.js.map"
+    "main.css": "/Blogging-Platform/static/css/main.2750f747.css",
+    "main.js": "/Blogging-Platform/static/js/main.167bc7b4.js",
+    "static/js/453.e56fee0f.chunk.js": "/Blogging-Platform/static/js/453.e56fee0f.chunk.js",
+    "index.html": "/Blogging-Platform/index.html",
+    "main.2750f747.css.map": "/Blogging-Platform/static/css/main.2750f747.css.map",
+    "main.167bc7b4.js.map": "/Blogging-Platform/static/js/main.167bc7b4.js.map",
+    "453.e56fee0f.chunk.js.map": "/Blogging-Platform/static/js/453.e56fee0f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b6346b7.css",
-    "static/js/main.0233659e.js"
+    "static/css/main.2750f747.css",
+    "static/js/main.167bc7b4.js"
   ]
 }
