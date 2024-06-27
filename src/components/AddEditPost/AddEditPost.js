@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams ,Link} from 'react-router-dom';
 import { addPost, updatePost, getPostById } from '../../utils/mockApi';
 import './index.css';
 
 const AddEditPost = () => {
   const { id } = useParams();
-  const history = useNavigate();
   const [state, setState] = useState({
     title: '',
     author: '',
     content: '',
     publicationDate: '',
+    isChanged:false
   });
 
   useEffect(() => {
@@ -45,19 +45,22 @@ const AddEditPost = () => {
     } else {
       addPost(newPost);
     }
+    setState({isChanged :true})
 
-    history.push('/');
   };
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
 
-  const { title, author, content, publicationDate } = state;
+  const { title, author, content, publicationDate ,isChanged} = state;
 
   return (
     <div className="addedit-post-list">
-     <form className="add-edit-form" onSubmit={handleSubmit}>
+      {isChanged ? (<div><p>Blogs Updated Successfully</p>
+        <Link to="/"><button className='btn'>GO TO HOME</button></Link>  </div>
+    ) : (
+        <form className="add-edit-form" onSubmit={handleSubmit}>
       <h1 className='head'>Fill The Details</h1>
       <label>Enter Title</label>
       <input
@@ -95,10 +98,11 @@ const AddEditPost = () => {
         required
       /><br/>
       <button  className='newblog-btn' type="submit">{id ? 'Update Post' : 'Add Post'}</button>
-    </form>
+    </form>)
+    }
     </div>
     
-  );
+  )
 };
 
 export default AddEditPost;

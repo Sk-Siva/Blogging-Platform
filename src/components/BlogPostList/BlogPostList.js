@@ -24,7 +24,7 @@ class BlogPostList extends Component {
 
   render() {
     const { posts } = this.state;
-
+    const isEmpty = posts.length === 0
     return (
       <>
       <Link to="/" className='bloglist'>
@@ -34,20 +34,20 @@ class BlogPostList extends Component {
         <button className='newblog-btn'>Add New Blog</button>
         </Link>
         <h2>Recent Blogs</h2>
-        <ul className='list-container'>
+        {isEmpty ? (<p>NO BLOGS ARE AVAILABLE ! ADD NEW BLOGS NOW</p>)
+         : (<ul className='list-container'>
           {posts.map((post) => (
-            <li key={post.id}>
-              <Link className="bloglist" to={`/post/${post.id}`}>
-              <div className='list'><h2>
+            <li key={post.id}>     
+              <div className='list'><Link className="bloglist" to={`/post/${post.id}`}><h2>
                 {post.title}
-              </h2>
+              </h2></Link>
               <p>{post.summary}</p>
               <p>{post.author} - {post.publicationDate}</p>
-              <button className='delete-btn' onClick={() => this.handleDelete(post.id)}>Delete</button></div>
-              </Link>
+              <button className='delete-btn' onClick={() => this.handleDelete(post.id)}>Delete</button></div> 
             </li>
           ))}
-        </ul>
+        </ul>)}
+        
         
       </div>
       </Link>
