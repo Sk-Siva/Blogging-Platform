@@ -3,18 +3,18 @@
 let posts = [
     {
       id: '1',
-      title: 'First Blog Post',
+      title: 'The Art of Cooking',
       author: 'John Doe',
-      content: 'This is the content of the first blog post.',
-      summary: 'Summary of the first blog post.',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ullamcorper velit. Nullam feugiat risus quis ipsum volutpat, id gravida leo placerat. Cras eget sem vel dolor accumsan malesuada vel vitae nunc.',
+      summary: 'Explore the world of culinary arts and learn some tips for mastering the kitchen.',
       publicationDate: '2023-01-01',
     },
     {
       id: '2',
-      title: 'Second Blog Post',
+      title: 'Exploring the Wilderness',
       author: 'Jane Smith',
-      content: 'This is the content of the second blog post.',
-      summary: 'Summary of the second blog post.',
+      content: 'Proin dictum feugiat mi, eget lacinia lorem varius non. Vivamus in neque et est aliquet interdum. Sed sit amet aliquet dolor. Donec et ipsum a massa ullamcorper consectetur vitae sed felis.',
+      summary: 'Embark on an adventure through untouched landscapes and discover the wonders of nature.',
       publicationDate: '2023-02-01',
     },
   ];

@@ -6,16 +6,16 @@ import AddEditPost from './components/AddEditPost/AddEditPost';
 import './App.css';
 
 const App = () => (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route exact path="/" component={BlogPostList} />
-          <Route exact path="/post/:id" component={BlogPost} />
-          <Route exact path="/add" component={AddEditPost} />
-          <Route exact path="/edit/:id" component={AddEditPost} />
-        </Routes>
-      </BrowserRouter>
-    </div>
-  )
+  <div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<BlogPostList />} />
+        <Route path="/post/:id" element={<BlogPost />} />
+        <Route path="/add" element={<AddEditPost />} />
+        <Route path="/edit/:id" element={<AddEditPost />} />
+      </Routes>
+    </BrowserRouter>
+  </div>
+)
 
 export default App;

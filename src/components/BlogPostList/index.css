@@ -1,0 +1,38 @@
+.blog-post-list{
+    text-align:center;
+    background-color:lightblue;
+    margin:0px;
+    padding:10px;
+    min-height:100vh;
+}
+.bloglist{
+    text-decoration:none;
+    color:black;
+}
+.list-container{
+    list-style-type:none;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+.newblog-btn{
+    color:#ffffff;
+    background-color:darkblue;
+    border-width:0px;
+    border-radius:10px;
+    padding:10px;
+}
+.list{
+    width:300px;
+    background-color: lightgoldenrodyellow;
+    padding:10px;
+    border:1px solid #000000;
+    border-radius:10px;
+}
+.delete-btn{
+    color:#ffffff;
+    background-color:red;
+    border-width:0px;
+    padding:10px;
+    border-radius:10px;
+}

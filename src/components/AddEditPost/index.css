@@ -1,0 +1,27 @@
+.add-edit-form{
+    border:1px solid #000000;
+    padding:10px;
+    border-radius:10px;
+    width:300px;
+    padding-left:50px;
+}
+.head{
+    text-align:center;
+}
+.addedit-post-list{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:lightblue;
+    margin:0px;
+    padding:10px;
+    min-height:100vh;
+}
+input{
+    margin-top:5px;
+    margin-bottom:10px;
+    border-width:1px;
+    border-radius:5px;
+    height:30px;
+    width:250px;
+}

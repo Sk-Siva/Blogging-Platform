@@ -1,0 +1,25 @@
+.post-background{
+    text-align:center;
+    background-color:lightblue;
+    margin:0px;
+    padding:10px;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.post-container{
+    width:300px;
+    background-color: lightgoldenrodyellow;
+    padding:10px;
+    border:1px solid #000000;
+    border-radius:10px;
+    }
+.btn{
+    background-color:lightgreen;
+    padding:10px;
+    margin:10px;
+    border-width:0px;
+    border-radius:10px;
+    color:#ffffff;
+}
