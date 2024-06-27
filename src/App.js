@@ -9,10 +9,10 @@ const App = () => (
   <div>
     <Router basename="Blogging-Platform">
       <Routes>
-        <Route path="/" element={<BlogPostList />} />
-        <Route path="/post/:id" element={<BlogPost />} />
-        <Route path="/add" element={<AddEditPost />} />
-        <Route path="/edit/:id" element={<AddEditPost />} />
+        <Route exact path="/" element={<BlogPostList />} />
+        <Route exact path="/post/:id" element={<BlogPost />} />
+        <Route exact path="/add" element={<AddEditPost />} />
+        <Route exact path="/edit/:id" element={<AddEditPost />} />
       </Routes>
     </Router>
   </div>

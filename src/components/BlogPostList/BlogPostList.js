@@ -47,8 +47,6 @@ class BlogPostList extends Component {
             </li>
           ))}
         </ul>)}
-        
-        
       </div>
       </Link>
       </>
