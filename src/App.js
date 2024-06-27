@@ -7,7 +7,7 @@ import './App.css';
 
 const App = () => (
   <div>
-    <Router basename="Blogging-Platform">
+    <Router basename="/Blogging-Platform">
       <Routes>
         <Route exact path="/" element={<BlogPostList />} />
         <Route exact path="/post/:id" element={<BlogPost />} />
